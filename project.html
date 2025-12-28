@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Overview</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <nav class="links">
+            <a href="index.html">Home</a>
+            <a href="project.html">Project Overview</a>
+            <a href="conclusion.html">Conclusion & Contact</a>
+    </nav>
+
+<!-- INTRODUCTION SECTION -->
+<section class="intro-section light-bg">
+    <h1>Project Introduction</h1>
+
+    <div class="intro-slider">
+
+        <!-- Challenge -->
+        <div class="intro-box active">
+            <div class="intro-text">
+                <h2>The Challenge</h2>
+                <p>
+                    Egypt produces nearly 90 million tons of solid waste annually, yet only a small
+                    percentage is recycled. Electronic waste, in particular, contains hazardous
+                    materials that contribute to environmental pollution and public health risks
+                    when improperly disposed of. At the same time, these discarded electronics
+                    contain valuable components that are rarely reused.
+                </p>
+            </div>
+            <img src="challenge.jpg" alt="E-waste challenge">
+        </div>
+
+        <!-- Previous Solutions -->
+        <div class="intro-box">
+            <div class="intro-text">
+                <h2>Previous Solutions</h2>
+                <p>
+                    Existing solutions mainly focus on large-scale recycling systems that require
+                    advanced infrastructure, specialized facilities, and high financial investment.
+                    While effective in developed countries, these approaches are difficult to
+                    implement in developing nations such as Egypt due to cost and accessibility
+                    limitations.
+                </p>
+            </div>
+            <img src="previous.jpeg" alt="Previous solutions">
+        </div>
+
+        <!-- Proposed Solution -->
+        <div class="intro-box">
+            <div class="intro-text">
+                <h2>Proposed Solution</h2>
+                <p>
+                    Our project proposes a sustainable and low-cost alternative by reusing functional
+                    components from electronic waste to construct a stable 12V DC power supply.
+                    This approach reduces waste, lowers costs, and provides a practical energy
+                    solution suitable for school laboratories and small-scale applications.
+                </p>
+            </div>
+            <img src="project_photo.jpeg" alt="Proposed solution">
+        </div>
+
+    </div>
+</section>
+
+<!-- MATERIALS & METHODS -->
+<section class="methods-section dark-bg">
+    <h1>Materials & Methods</h1>
+
+    <div class="flowchart">
+        <div class="step">
+            <p>Collecting & Testing E-waste Components</p>
+            <img src="first_step.jpeg" alt="Collecting components">
+        </div>
+
+        <div class="arrow">➜</div>
+
+        <div class="step">
+            <p>Designing the Power Supply Circuit</p>
+            <img src="second_step.jpeg" alt="Circuit design">
+        </div>
+
+        <div class="arrow">➜</div>
+
+        <div class="step">
+            <p>System schematic diagram</p>
+            <img src="diagram.jpg" alt="Assembly">
+        </div>
+
+        <div class="arrow">➜</div>
+
+        <div class="step">
+            <p>Assembling Components Safely</p>
+            <img src="fourth_step.jpeg" alt="Testing">
+        </div>
+    </div>
+</section>
+
+<!-- RESULTS -->
+<!-- RESULTS -->
+<section class="results-section light-bg">
+    <h1>Results</h1>
+
+    <div class="results-grid">
+
+        <!-- TABLE 1 -->
+        <div class="result-card">
+            <h3>Table 1 – Voltage, Current, and Power Measurements</h3>
+            <p class="key-result">
+                The +12 V rail maintained a stable average output voltage of
+                <strong>12.04 V</strong> while supplying a 1 W fan load.
+            </p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rail</th>
+                        <th>V₁ (V)</th>
+                        <th>V₂ (V)</th>
+                        <th>V₃ (V)</th>
+                        <th>Vavg (V)</th>
+                        <th>Current (mA)</th>
+                        <th>Power (W)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>+12 V</td>
+                        <td>12.07</td>
+                        <td>12.06</td>
+                        <td>12.00</td>
+                        <td><strong>12.04</strong></td>
+                        <td>89.98</td>
+                        <td>1.08</td>
+                    </tr>
+                    <tr>
+                        <td>+5 V</td>
+                        <td>5.04</td>
+                        <td>5.04</td>
+                        <td>5.03</td>
+                        <td><strong>5.04</strong></td>
+                        <td>47.80</td>
+                        <td>0.24</td>
+                    </tr>
+                    <tr>
+                        <td>+3.3 V</td>
+                        <td>3.27</td>
+                        <td>3.26</td>
+                        <td>3.26</td>
+                        <td><strong>3.26</strong></td>
+                        <td>31.20</td>
+                        <td>0.10</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- TABLE 2 -->
+        <div class="result-card">
+            <h3>Table 2 – Ripple Voltage Measurements</h3>
+            <p class="key-result">
+                Ripple voltage on all rails remained well below design limits,
+                indicating high-quality DC output.
+            </p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rail</th>
+                        <th>Ripple Limit (mV)</th>
+                        <th>Measured Ripple (mV)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>+12 V</td>
+                        <td>120</td>
+                        <td><strong>43</strong></td>
+                    </tr>
+                    <tr>
+                        <td>+5 V</td>
+                        <td>50</td>
+                        <td><strong>18</strong></td>
+                    </tr>
+                    <tr>
+                        <td>+3.3 V</td>
+                        <td>50</td>
+                        <td><strong>21</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- TABLE 3 -->
+        <div class="result-card">
+            <h3>Table 3 – Input and Output Power at Different Loads</h3>
+            <p class="key-result">
+                The system achieved a peak efficiency of <strong>74.3%</strong> at
+                medium load, with increasing losses at full load.
+            </p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Load (%)</th>
+                        <th>Load Current (A)</th>
+                        <th>Pin (W)</th>
+                        <th>Pout (W)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>25%</td>
+                        <td>1.25</td>
+                        <td>93.02</td>
+                        <td>65.58</td>
+                    </tr>
+                    <tr>
+                        <td>50%</td>
+                        <td>2.50</td>
+                        <td>176.53</td>
+                        <td>131.16</td>
+                    </tr>
+                    <tr>
+                        <td>75%</td>
+                        <td>3.75</td>
+                        <td>266.57</td>
+                        <td>196.73</td>
+                    </tr>
+                    <tr>
+                        <td>100%</td>
+                        <td>5.00</td>
+                        <td>368.41</td>
+                        <td>262.31</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</section>
+<!-- ANALYSIS -->
+<section class="analysis-section light-bg">
+    <h1>Project Analysis</h1>
+
+    <div class="analysis-grid">
+
+        <!-- Graph 1 – Voltage Stability -->
+        <div class="analysis-card">
+            <h3>Voltage Stability</h3>
+            <p class="key-result">
+                The voltage stability of the power supply was tested under loads ranging from 0% to 100%. Results show excellent performance with an average output of 12.04 V and minimal standard deviation. All load conditions passed.
+            </p>
+            <p class="equation-used"><strong>Equation 2:</strong> V = IR</p>
+            <img src="Figure 1 analysis.jpg" alt="Voltage output vs load">
+        </div>
+
+        <!-- Graph 2 – Ripple Voltage -->
+        <div class="analysis-card">
+            <h3>Ripple Voltage</h3>
+            <p class="key-result">
+                Ripple voltage measurements on all DC rails demonstrate a clean output. The +12 V rail exhibits only 0.36% ripple, well below design limits. Capacitive filtering and noise suppression ensure high-quality DC power.
+            </p>
+            <p class="equation-used"><strong>Equation 3:</strong> Ripple % = (Vripple / VDC) × 100</p>
+            <img src="Figure 2 analysis.jpg" alt="Ripple voltage vs specification">
+        </div>
+
+        <!-- Graph 3 – Temperature Rise -->
+        <div class="analysis-card">
+            <h3>Temperature Rise</h3>
+            <p class="key-result">
+                The temperature rise of the system was monitored under varying loads. Results show minimal increase, confirming safe operating conditions for all components.
+            </p>
+            <img src="Figure 3 analysis.jpg" alt="Temperature rise vs load">
+        </div>
+
+        <!-- Graph 4 – System Efficiency -->
+        <div class="analysis-card">
+            <h3>System Efficiency</h3>
+            <p class="key-result">
+                System efficiency was calculated across the load range, reaching a peak of 74.3% at 50% load. High efficiency reduces energy loss and improves overall performance.
+            </p>
+            <div class="equation-used">
+                <p><strong>Equation 5:</strong> Pin = V × I × PF</p>
+                <p><strong>Equation 6:</strong> Pout = V × I</p>
+                <p><strong>Equation 7:</strong> η = Pout / Pin × 100</p>
+            </div>
+            <img src="Figure 4 analysis.jpg" alt="System efficiency vs load">
+        </div>
+
+    </div>
+</section>
+
+
+<footer>
+    <p>&copy; 2025 – Project Group 21210</p>
+</footer>
+
+<script src="project.js"></script>
+</body>
+</html>

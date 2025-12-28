@@ -1,0 +1,201 @@
+/* =========================
+   General Page Styling
+   ========================= */
+body {
+    margin: 0;
+    font-family: "Times New Roman", Times, serif;
+    background-color: #f4f4f4;
+    color: #0D4715;
+}
+
+/* Make all main sections screen-sized */
+.header-section,
+.members-section,
+.abstract-section {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+/* =========================
+   Section 1: Header
+   ========================= */
+.header-section {
+    justify-content: space-between;
+    padding: 0 8%;
+    background-color: #EBE1D1;
+    position: relative;
+}
+
+.header-section h1 {
+    width: 50%;
+    font-size: 52px;
+    line-height: 1.3;
+}
+
+.header-section img {
+    width:500px;
+    max-width: 500px;
+    border-radius: 12px;
+}
+
+.header-section h3 {
+    position: absolute;
+    top: 30px;
+    left: 8%;
+    font-size: 24px;
+    color: #41644A;
+}
+
+/* =========================
+   Section 2: Members
+   ========================= */
+.members-section {
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #0D4715;
+}
+
+/* Section title */
+.members-section h2 {
+    position: absolute;
+    top: 30px;
+    font-size: 30px;
+    color:#EBE1D1;
+}
+
+/* Member name (changes with slider) */
+.member h3 {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 26px;
+    margin: 0;
+    color:#EBE1D1;
+}
+
+/* Container */
+.members-container {
+    width: 100%;
+}
+
+/* Member layout */
+.member {
+    display: none;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+/* Show active member only */
+.member.active {
+    display: flex;
+}
+
+/* Rectangular large image */
+.member img {
+    width: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #EBE1D1;
+}
+
+/* Description box */
+.member-info {
+    width: 40%;
+    background-color: #EBE1D1;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    text-align: left;
+    margin-top: 70px;
+}
+
+
+.member-info p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* =========================
+   Slider Arrows
+   ========================= */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #0D4715;
+    color: #fff;
+    border: none;
+    font-size: 32px;
+    padding: 12px 18px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1000;   /* 🔥 THIS IS THE FIX */
+}
+
+
+.arrow.left {
+    left: 30px;
+}
+
+.arrow.right {
+    right: 30px;
+}
+
+.arrow:hover {
+    background-color: #0D4715;
+}
+
+/* =========================
+   Section 3: Abstract
+   ========================= */
+.abstract-section {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 18%;
+    background-color: #EBE1D1;
+}
+
+.abstract-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.abstract-section p {
+    font-size: 19px;
+    line-height: 1.9;
+    text-align: justify;
+}
+
+/* =========================
+   Footer (Traditional)
+   ========================= */
+footer {
+    background-color: #0D4715;
+    color: #ddd;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.links {
+    background-color: #0D4715;
+    padding: 20px 0;
+    text-align: center;
+    text-decoration: none;
+    color: #EBE1D1;
+}
+.links a {
+    color: #EBE1D1;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.links a:hover {
+    text-decoration: underline;
+}
