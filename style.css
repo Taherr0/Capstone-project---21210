@@ -42,10 +42,13 @@ body {
 .header-section h3 {
     position: absolute;
     top: 30px;
-    left: 8%;
-    font-size: 24px;
-    color: #41644A;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    color: #0D4715;
+    margin-top: 2%;
 }
+
 
 /* =========================
    Section 2: Members
@@ -65,37 +68,25 @@ body {
     color:#EBE1D1;
 }
 
-/* Member name (changes with slider) */
-.member h3 {
-    position: absolute;
-    top: 80px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 26px;
-    margin: 0;
-    color:#EBE1D1;
-}
-
-/* Container */
+/* Members container */
 .members-container {
     width: 100%;
 }
 
-/* Member layout */
+/* Member row */
 .member {
     display: none;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: space-evenly; /* space between photo & text */
     align-items: center;
-    position: relative;
 }
 
-/* Show active member only */
+/* Show active member */
 .member.active {
     display: flex;
 }
 
-/* Rectangular large image */
+/* Member image (left) */
 .member img {
     width: 300px;
     object-fit: cover;
@@ -103,18 +94,33 @@ body {
     border: 3px solid #EBE1D1;
 }
 
+/* Right-side text wrapper */
+.member-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+/* Member name */
+.member-text h3 {
+    font-size: 26px;
+    color: #EBE1D1;
+    margin-bottom: 20px; /* space above box */
+    text-align: center;
+}
+
 /* Description box */
 .member-info {
-    width: 40%;
+    width: 100%;
     background-color: #EBE1D1;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.12);
     text-align: left;
-    margin-top: 70px;
 }
 
-
+/* Paragraph */
 .member-info p {
     font-size: 17px;
     line-height: 1.7;
@@ -176,11 +182,10 @@ body {
    Footer (Traditional)
    ========================= */
 footer {
-    background-color: #0D4715;
-    color: #ddd;
+    background: #41644A;
+    color: #EBE1D1;
     text-align: center;
-    padding: 20px 0;
-    font-size: 14px;
+    padding: 20px;
 }
 
 .links {
