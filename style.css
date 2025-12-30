@@ -37,6 +37,7 @@ body {
     width:500px;
     max-width: 500px;
     border-radius: 12px;
+    margin-top: 20px;
 }
 
 .header-section h3 {
@@ -204,3 +205,4 @@ footer {
 .links a:hover {
     text-decoration: underline;
 }
+
