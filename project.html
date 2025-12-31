@@ -30,7 +30,7 @@
                     contain valuable components that are rarely reused.
                 </p>
             </div>
-            <img src="challenge.jpg" alt="E-waste challenge">
+            <img src="img/challenge.jpg" alt="E-waste challenge">
         </div>
 
         <!-- Previous Solutions -->
@@ -45,7 +45,7 @@
                     limitations.
                 </p>
             </div>
-            <img src="previous.jpeg" alt="Previous solutions">
+            <img src="img/previous.jpeg" alt="Previous solutions">
         </div>
 
         <!-- Proposed Solution -->
@@ -59,7 +59,7 @@
                     solution suitable for school laboratories and small-scale applications.
                 </p>
             </div>
-            <img src="project_photo.jpeg" alt="Proposed solution">
+            <img src="img/project_photo.jpeg" alt="Proposed solution">
         </div>
 
     </div>
@@ -72,28 +72,28 @@
     <div class="flowchart">
         <div class="step">
             <p>Collecting & Testing E-waste Components</p>
-            <img src="first_step.jpeg" alt="Collecting components">
+            <img src="img/first_step.jpeg" alt="Collecting components">
         </div>
 
         <div class="arrow">➜</div>
 
         <div class="step">
             <p>Designing the Power Supply Circuit</p>
-            <img src="second_step.jpeg" alt="Circuit design">
+            <img src="img/second_step.jpeg" alt="Circuit design">
         </div>
 
         <div class="arrow">➜</div>
 
         <div class="step">
             <p>System schematic diagram</p>
-            <img src="diagram.jpg" alt="Assembly">
+            <img src="img/diagram.jpg" alt="Assembly">
         </div>
 
         <div class="arrow">➜</div>
 
         <div class="step">
             <p>Assembling Components Safely</p>
-            <img src="fourth_step.jpeg" alt="Testing">
+            <img src="img/fourth_step.jpeg" alt="Testing">
         </div>
     </div>
 </section>
@@ -254,7 +254,7 @@
                 The voltage stability of the power supply was tested under loads ranging from 0% to 100%. Results show excellent performance with an average output of 12.04 V and minimal standard deviation. All load conditions passed.
             </p>
             <p class="equation-used"><strong>Equation 2:</strong> V = IR</p>
-            <img src="Figure 1 analysis.jpg" alt="Voltage output vs load">
+            <img src="img/Figure 1 analysis.jpg" alt="Voltage output vs load">
         </div>
 
         <!-- Graph 2 – Ripple Voltage -->
@@ -264,16 +264,20 @@
                 Ripple voltage measurements on all DC rails demonstrate a clean output. The +12 V rail exhibits only 0.36% ripple, well below design limits. Capacitive filtering and noise suppression ensure high-quality DC power.
             </p>
             <p class="equation-used"><strong>Equation 3:</strong> Ripple % = (Vripple / VDC) × 100</p>
-            <img src="Figure 2 analysis.jpg" alt="Ripple voltage vs specification">
+            <img src="img/Figure 2 analysis.jpg" alt="Ripple voltage vs specification">
         </div>
 
         <!-- Graph 3 – Temperature Rise -->
         <div class="analysis-card">
-            <h3>Temperature Rise</h3>
+            <h3>Regressio line</h3>
             <p class="key-result">
-                The temperature rise of the system was monitored under varying loads. Results show minimal increase, confirming safe operating conditions for all components.
+                The correlation coefficent in Voltage-current graph = 0.98. which shows a strong direct relationship with a low percentage of error.
             </p>
-            <img src="Figure 3 analysis.jpg" alt="Temperature rise vs load">
+            <div class="equation-used">
+                <p><strong>Equation 4:</strong> r = Σ[(xᵢ - x̄)(yᵢ - ȳ)] / √[Σ(xᵢ - x̄)² × Σ(yᵢ - ȳ)²]</p>
+
+            </div>
+            <img src="img/Figure 3 analysis.jpeg" alt="Volatge vs load">
         </div>
 
         <!-- Graph 4 – System Efficiency -->
@@ -287,7 +291,7 @@
                 <p><strong>Equation 6:</strong> Pout = V × I</p>
                 <p><strong>Equation 7:</strong> η = Pout / Pin × 100</p>
             </div>
-            <img src="Figure 4 analysis.jpg" alt="System efficiency vs load">
+            <img src="img/Figure 4 analysis.jpg" alt="System efficiency vs load">
         </div>
 
     </div>
