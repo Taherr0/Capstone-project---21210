@@ -1,5 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+    /* =========================
+       Members Slider
+       ========================= */
     let currentIndex = 0;
     const members = document.querySelectorAll(".member");
 
@@ -18,5 +21,23 @@ document.addEventListener("DOMContentLoaded", function () {
         showMember(currentIndex);
     };
 
-});
+    /* =========================
+       Efficiency Scroll Animation
+       ========================= */
+   const boxes = document.querySelectorAll(".efficiency-box");
 
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+
+            const fill = entry.target.querySelector(".efficiency-fill");
+            fill.style.width = fill.dataset.value;
+
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.4 });
+
+boxes.forEach(box => observer.observe(box));
+});
