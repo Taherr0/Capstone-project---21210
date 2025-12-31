@@ -205,5 +205,197 @@ footer {
 .links a:hover {
     text-decoration: underline;
 }
+/* Efficiency Diagram */
 
+
+.efficiency-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.efficiency-bar {
+    width: 100%;
+    height: 30px;
+    background: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+/* Text appears only on hover / touch */
+.efficiency-text {
+    position: absolute;
+    top: -28px;              /* move above the bar */
+    right: 0;
+    background: #333;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    opacity: 0;
+    white-space: nowrap;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(5px);
+}
+
+/* Show on hover / touch */
+.efficiency-fill:hover .efficiency-text,
+.efficiency-fill:active .efficiency-text {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.efficiency-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: 6px;
+}
+/* =========================
+   Abstract Layout Upgrade
+   ========================= */
+.abstract-content {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.abstract-text {
+    flex: 2;
+}
+
+.efficiency-box {
+    flex: 1;
+    max-width: 350px;
+    padding: 25px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    transform: translateX(-80px);
+    opacity: 0;
+    text-align: center;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateX(-80px);
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1s ease;
+}
+
+.efficiency-bar {
+    width: 100%;
+    height: 30px;
+    background: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.efficiency-fill {
+    height: 100%;
+    width: 0;
+    background: linear-gradient(90deg, #2ecc71, #27ae60, #a8ff78);
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: width 1.4s ease;
+    animation: glow 2s infinite alternate;
+}
+
+/* Glow effect */
+@keyframes glow {
+    from {
+        box-shadow: 0 0 5px #2ecc71;
+    }
+    to {
+        box-shadow: 0 0 20px #27ae60;
+    }
+}
+/* =========================
+   Abstract: Left text, Right diagrams
+   ========================= */
+.abstract-content {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.abstract-text {
+    flex: 2;
+}
+
+.diagram-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Shared diagram card */
+.efficiency-box {
+    padding: 22px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    text-align: center;
+    opacity: 0;
+    transform: translateX(80px); /* slide from right */
+}
+
+/* Scroll animation */
+.hidden {
+    opacity: 0;
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1s ease;
+}
+
+/* Bar base */
+.efficiency-bar {
+    width: 100%;
+    height: 28px;
+    background: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* Efficiency bar */
+.efficiency-fill {
+    height: 100%;
+    width: 0;
+    background: linear-gradient(90deg, #2ecc71, #27ae60);
+    border-radius: 20px;
+    transition: width 1.4s ease;
+    animation: glow 2s infinite alternate;
+    position: relative;
+}
+
+/* Recycling bar (different color = strong visual contrast) */
+.recycle-fill {
+    background: linear-gradient(90deg, #f39c12, #e67e22);
+    animation: glow-orange 2s infinite alternate;
+}
+
+/* Glow effects */
+@keyframes glow {
+    from { box-shadow: 0 0 6px #2ecc71; }
+    to   { box-shadow: 0 0 18px #27ae60; }
+}
+
+@keyframes glow-orange {
+    from { box-shadow: 0 0 6px #f39c12; }
+    to   { box-shadow: 0 0 18px #e67e22; }
+}
 
